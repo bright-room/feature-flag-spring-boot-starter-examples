@@ -6,19 +6,14 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import java.nio.charset.StandardCharsets;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.http.HttpMessageConverters;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Primary;
-import org.springframework.http.converter.HttpMessageConverter;
-import org.springframework.http.converter.StringHttpMessageConverter;
-import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.web.reactive.config.WebFluxConfigurer;
 
 @SpringBootApplication
-public class Application implements WebFluxConfigurer {
+class Application implements WebFluxConfigurer {
 
   public static void main(String[] args) {
     SpringApplication.run(Application.class, args);
@@ -36,15 +31,5 @@ public class Application implements WebFluxConfigurer {
     objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
 
     return objectMapper;
-  }
-
-  @Bean
-  HttpMessageConverters customConvertor() {
-    HttpMessageConverter<?> stringHttpMessageConverter =
-        new StringHttpMessageConverter(StandardCharsets.UTF_8);
-    HttpMessageConverter<?> mappingJackson2HttpMessageConverter =
-        new MappingJackson2HttpMessageConverter(objectMapper());
-    return new HttpMessageConverters(
-        stringHttpMessageConverter, mappingJackson2HttpMessageConverter);
   }
 }
