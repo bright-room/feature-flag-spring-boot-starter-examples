@@ -1,0 +1,20 @@
+[versions]
+java = "21"
+
+[libraries]
+spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web" }
+spring-boot-starter-webflux = { module = "org.springframework.boot:spring-boot-starter-webflux" }
+
+spring-boot-configuration-processor = { module = "org.springframework.boot:spring-boot-configuration-processor" }
+
+mybatis-spring-boot-starter = { module = "org.mybatis.spring.boot:mybatis-spring-boot-starter", version = { strictly = "3.0.3" } }
+h2db = { module = "com.h2database:h2" }
+
+feature-flag-spring-boot-starter-core = { module = "net.bright-room.feature-flag-spring-boot-starter:core", version = { strictly = "0.0.4" } }
+feature-flag-spring-boot-starter-web = { module = "net.bright-room.feature-flag-spring-boot-starter:web", version = { strictly = "0.0.4" } }
+feature-flag-spring-boot-starter-webflux = { module = "net.bright-room.feature-flag-spring-boot-starter:webflux", version = { strictly = "0.0.4" } }
+
+spring-boot = { module = "org.springframework.boot:org.springframework.boot.gradle.plugin", version = { strictly = "3.4.2" } }
+spring-dependency-management = { module = "io.spring.dependency-management:io.spring.dependency-management.gradle.plugin", version = { strictly = "1.1.7" }  }
+
+spotless = { module = "com.diffplug.spotless:com.diffplug.spotless.gradle.plugin", version = { strictly = "7.0.2" } }

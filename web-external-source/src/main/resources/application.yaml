@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+  h2:
+    console:
+      enabled: true
+  sql:
+    init:
+      encoding: UTF-8
+      mode: always
+
+mybatis:
+  mapper-locations: classpath*:/net/brightroom/example/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
