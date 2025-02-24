@@ -1,10 +1,9 @@
 package net.brightroom.example;
 
+import java.util.Objects;
 import net.brightroom.featureflag.provider.FeatureFlagProvider;
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Primary
 @Component
 class FeatureFlagExternalDataSourceProvider implements FeatureFlagProvider {
 
@@ -13,7 +12,7 @@ class FeatureFlagExternalDataSourceProvider implements FeatureFlagProvider {
   @Override
   public boolean isFeatureEnabled(String featureName) {
     Boolean enabled = featureManagementMapper.check(featureName);
-    if (enabled == null) return true;
+    if (Objects.isNull(enabled)) return true;
     return enabled;
   }
 

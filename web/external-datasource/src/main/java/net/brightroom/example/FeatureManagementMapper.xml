@@ -5,7 +5,7 @@
     <select id="check" resultType="java.lang.Boolean">
         select enabled
         from feature_management
-        where api = #{feature};
+        where feature_name = #{featureName};
     </select>
 
 </mapper>

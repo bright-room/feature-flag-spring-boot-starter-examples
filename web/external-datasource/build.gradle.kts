@@ -5,9 +5,11 @@ plugins {
 
 dependencies {
     implementation(libs.spring.boot.starter.web)
-    implementation(libs.mybatis.spring.boot.starter)
 
-    runtimeOnly(libs.h2db)
+    implementation(libs.mybatis.spring.boot.starter)
+    runtimeOnly(libs.postgresql.jdbc)
+
+    implementation(libs.spring.boot.docker.compose)
 
     implementation(libs.feature.flag.spring.boot.starter.core)
     implementation(libs.feature.flag.spring.boot.starter.web)

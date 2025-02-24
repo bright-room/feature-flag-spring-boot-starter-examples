@@ -13,8 +13,9 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "feature-flag-spring-boot-starter-examples"
-include("web-in-memory")
-include("web-external-source")
-include("webflux-in-memory")
-
 includeBuild("gradle-scripts")
+
+include(":web:in-memory")
+include(":web:external-datasource")
+include(":webflux:in-memory")
+include(":webflux:external-datasource")

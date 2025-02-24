@@ -5,5 +5,5 @@ import org.apache.ibatis.annotations.Param;
 
 @Mapper
 interface FeatureManagementMapper {
-  Boolean check(@Param("feature") String feature);
+  Boolean check(@Param("featureName") String featureName);
 }

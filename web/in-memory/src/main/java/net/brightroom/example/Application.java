@@ -20,7 +20,7 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
-public class Application implements WebMvcConfigurer {
+class Application implements WebMvcConfigurer {
 
   FeatureFlagInterceptor featureFlagInterceptor;
 
