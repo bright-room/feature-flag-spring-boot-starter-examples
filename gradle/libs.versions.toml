@@ -18,7 +18,7 @@ spring-boot-starter-data-r2dbc = { module = "org.springframework.boot:spring-boo
 #########################################
 # o/r mapper
 #########################################
-mybatis-spring-boot-starter = { module = "org.mybatis.spring.boot:mybatis-spring-boot-starter", version = { strictly = "3.0.4" } }
+mybatis-spring-boot-starter = { module = "org.mybatis.spring.boot:mybatis-spring-boot-starter", version = { strictly = "3.0.5" } }
 postgresql-jdbc = { module = "org.postgresql:postgresql" }
 r2dbc-postgresql = { module = "org.postgresql:r2dbc-postgresql" }
 
