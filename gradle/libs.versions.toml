@@ -1,6 +1,6 @@
 [versions]
 java = "21"
-feature_flag = { strictly = "1.0.3" }
+feature_flag = { strictly = "1.0.4" }
 
 [libraries]
 #########################################
