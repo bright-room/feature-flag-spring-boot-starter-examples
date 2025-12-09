@@ -6,5 +6,5 @@ create table feature_management(
 );
 
 insert into feature_management(feature_name, enabled)
-values ('new-api', false),
-       ('beta-feature', true);
+values ('experimental', true),
+       ('development', false);
