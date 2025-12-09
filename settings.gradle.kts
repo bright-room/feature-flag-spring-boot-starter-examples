@@ -17,5 +17,3 @@ includeBuild("gradle-scripts")
 
 include(":web:in-memory")
 include(":web:external-datasource")
-include(":webflux:in-memory")
-include(":webflux:external-datasource")
