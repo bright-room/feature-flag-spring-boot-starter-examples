@@ -16,5 +16,6 @@ rootProject.name = "feature-flag-spring-boot-starter-examples"
 include(":webmvc:in-memory-provider-example")
 include(":webmvc:external-datasource-provider-example")
 include(":webmvc:custom-response-example")
+include(":webmvc:thymeleaf-access-denied-page-routing-example")
 
 includeBuild("gradle-scripts")
