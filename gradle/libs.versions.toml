@@ -1,38 +1,31 @@
 [versions]
-java = "21"
-feature_flag = { strictly = "1.0.3" }
+java = "25"
+feature_flag = { strictly = "2.0.0" }
 
 [libraries]
 #########################################
 # spring boot
 #########################################
-spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web" }
-spring-boot-starter-webflux = { module = "org.springframework.boot:spring-boot-starter-webflux" }
-
+spring-boot-starter-webmvc = { module = "org.springframework.boot:spring-boot-starter-webmvc" }
 spring-boot-configuration-processor = { module = "org.springframework.boot:spring-boot-configuration-processor" }
-
 spring-boot-docker-compose = { module = "org.springframework.boot:spring-boot-docker-compose" }
-
-spring-boot-starter-data-r2dbc = { module = "org.springframework.boot:spring-boot-starter-data-r2dbc" }
 
 #########################################
 # o/r mapper
 #########################################
-mybatis-spring-boot-starter = { module = "org.mybatis.spring.boot:mybatis-spring-boot-starter", version = { strictly = "3.0.5" } }
+mybatis-spring-boot-starter = { module = "org.mybatis.spring.boot:mybatis-spring-boot-starter", version = { strictly = "4.0.0" } }
 postgresql-jdbc = { module = "org.postgresql:postgresql" }
-r2dbc-postgresql = { module = "org.postgresql:r2dbc-postgresql" }
 
 #########################################
 # feature flags
 #########################################
 feature-flag-spring-boot-starter-core = { module = "net.bright-room.feature-flag-spring-boot-starter:core", version.ref = "feature_flag" }
-feature-flag-spring-boot-starter-web = { module = "net.bright-room.feature-flag-spring-boot-starter:web", version.ref = "feature_flag" }
-feature-flag-spring-boot-starter-webflux = { module = "net.bright-room.feature-flag-spring-boot-starter:webflux", version.ref = "feature_flag" }
+feature-flag-spring-boot-starter-webmvc = { module = "net.bright-room.feature-flag-spring-boot-starter:webmvc", version.ref = "feature_flag" }
 
 #########################################
 # gradle plugins
 #########################################
-spring-boot = { module = "org.springframework.boot:org.springframework.boot.gradle.plugin", version = { strictly = "3.5.4" } }
+spring-boot = { module = "org.springframework.boot:org.springframework.boot.gradle.plugin", version = { strictly = "4.0.0" } }
 spring-dependency-management = { module = "io.spring.dependency-management:io.spring.dependency-management.gradle.plugin", version = { strictly = "1.1.7" }  }
 
-spotless = { module = "com.diffplug.spotless:com.diffplug.spotless.gradle.plugin", version = { strictly = "7.2.1" } }
+spotless = { module = "com.diffplug.spotless:com.diffplug.spotless.gradle.plugin", version = { strictly = "8.1.0" } }

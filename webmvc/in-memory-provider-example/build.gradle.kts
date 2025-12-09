@@ -4,8 +4,8 @@ plugins {
 }
 
 dependencies {
-    implementation(libs.spring.boot.starter.web)
+    implementation(libs.spring.boot.starter.webmvc)
 
     implementation(libs.feature.flag.spring.boot.starter.core)
-    implementation(libs.feature.flag.spring.boot.starter.web)
+    implementation(libs.feature.flag.spring.boot.starter.webmvc)
 }

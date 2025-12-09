@@ -13,7 +13,7 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "feature-flag-spring-boot-starter-examples"
-includeBuild("gradle-scripts")
+include(":webmvc:in-memory-provider-example")
+include(":webmvc:external-datasource-provider-example")
 
-include(":web:in-memory")
-include(":web:external-datasource")
+includeBuild("gradle-scripts")
