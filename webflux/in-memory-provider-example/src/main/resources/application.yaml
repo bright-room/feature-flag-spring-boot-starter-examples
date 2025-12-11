@@ -1,0 +1,13 @@
+feature-flags:
+  include-path-pattern:
+    - "/api/v2/**"
+  exclude-path-pattern:
+    - "/api/v1/**"
+  features:
+    experimental: true
+    development: false
+  response:
+    status-code: 405
+    type: Json
+    body:
+      error: "Feature not available"
