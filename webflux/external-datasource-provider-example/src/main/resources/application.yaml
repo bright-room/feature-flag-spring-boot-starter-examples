@@ -1,0 +1,23 @@
+spring:
+  r2dbc:
+    url: "r2dbc:postgresql://localhost:65432/postgres"
+    username: "postgres"
+    password: "postgres"
+    pool:
+      min-idle: 10
+      max-size: 100
+      validation-query: "SELECT 1"
+  docker:
+    compose:
+      file: "../../docker/compose.yaml"
+
+feature-flags:
+  include-path-pattern:
+    - "/api/v2/**"
+  exclude-path-pattern:
+    - "/api/v1/**"
+  response:
+    status-code: 405
+    type: Json
+    body:
+      error: "Feature not available"
