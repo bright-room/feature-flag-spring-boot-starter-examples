@@ -12,3 +12,8 @@ feature-flags:
   features:
     experimental: true
     development: false
+  response:
+    status-code: 405
+    type: view
+    view:
+      forward-to: "/access-denied"
