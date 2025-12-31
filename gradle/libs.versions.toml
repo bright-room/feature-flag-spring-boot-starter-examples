@@ -14,7 +14,7 @@ spring-boot-docker-compose = { module = "org.springframework.boot:spring-boot-do
 #########################################
 # o/r mapper
 #########################################
-mybatis-spring-boot-starter = { module = "org.mybatis.spring.boot:mybatis-spring-boot-starter", version = { strictly = "4.0.0" } }
+mybatis-spring-boot-starter = { module = "org.mybatis.spring.boot:mybatis-spring-boot-starter", version = { strictly = "4.0.1" } }
 postgresql-jdbc = { module = "org.postgresql:postgresql" }
 
 #########################################
