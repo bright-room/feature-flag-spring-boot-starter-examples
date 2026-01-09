@@ -18,4 +18,9 @@ include(":webmvc:external-datasource-provider-example")
 include(":webmvc:custom-response-example")
 include(":webmvc:thymeleaf-access-denied-page-routing-example")
 
+include(":webflux:in-memory-provider-example")
+include(":webflux:external-datasource-provider-example")
+include(":webflux:custom-response-example")
+include(":webflux:thymeleaf-access-denied-page-routing-example")
+
 includeBuild("gradle-scripts")
