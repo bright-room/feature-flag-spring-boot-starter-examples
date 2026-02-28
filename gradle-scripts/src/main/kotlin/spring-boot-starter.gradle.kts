@@ -9,8 +9,6 @@ plugins {
 dependencies {
     developmentOnly(libs.spring.boot.devtools)
     annotationProcessor(libs.spring.boot.configuration.processor)
-
-
 }
 
 sourceSets {

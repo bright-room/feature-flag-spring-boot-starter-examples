@@ -1,5 +1,0 @@
-feature-flags:
-  feature-names:
-    demo-feature: false
-  response:
-    type: PLAIN_TEXT

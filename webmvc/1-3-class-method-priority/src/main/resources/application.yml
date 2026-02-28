@@ -1,4 +1,0 @@
-feature-flags:
-  feature-names:
-    legacy-api: false
-    special-endpoint: true
