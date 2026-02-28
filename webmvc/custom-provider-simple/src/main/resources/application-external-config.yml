@@ -1,0 +1,4 @@
+external-feature-flags:
+  flags:
+    cloud-feature: true
+    beta-feature: false

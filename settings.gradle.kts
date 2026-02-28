@@ -13,9 +13,14 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "feature-flag-spring-boot-starter-examples"
-include(":webmvc:default-provider-example")
-include(":webmvc:external-datasource-provider-example")
-include(":webmvc:custom-response-example")
-include(":webmvc:thymeleaf-access-denied-page-routing-example")
 
 includeBuild("gradle-scripts")
+
+include(
+    "webmvc:basic-usage",
+    "webmvc:fail-behavior",
+    "webmvc:custom-provider-database",
+    "webmvc:custom-provider-simple",
+    "webmvc:error-handling",
+    "webmvc:path-patterns",
+)

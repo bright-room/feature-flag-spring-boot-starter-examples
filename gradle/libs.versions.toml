@@ -1,6 +1,6 @@
 [versions]
 java = "25"
-feature_flag = { strictly = "2.1.0-rc2" }
+feature_flag = { strictly = "3.0.0" }
 
 [libraries]
 #########################################
@@ -9,8 +9,8 @@ feature_flag = { strictly = "2.1.0-rc2" }
 spring-boot-starter-webmvc = { module = "org.springframework.boot:spring-boot-starter-webmvc" }
 spring-boot-starter-thymeleaf = { module = "org.springframework.boot:spring-boot-starter-thymeleaf" }
 spring-boot-configuration-processor = { module = "org.springframework.boot:spring-boot-configuration-processor" }
+spring-boot-devtools = { module = "org.springframework.boot:spring-boot-devtools" }
 spring-boot-docker-compose = { module = "org.springframework.boot:spring-boot-docker-compose" }
-
 #########################################
 # o/r mapper
 #########################################

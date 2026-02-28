@@ -1,0 +1,3 @@
+feature-flags:
+  response:
+    type: PLAIN_TEXT

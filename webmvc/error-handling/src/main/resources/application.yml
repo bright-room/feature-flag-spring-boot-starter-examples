@@ -1,0 +1,4 @@
+feature-flags:
+  feature-names:
+    premium-feature: false
+    new-dashboard: false
