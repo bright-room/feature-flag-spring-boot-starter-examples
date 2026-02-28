@@ -1,5 +1,0 @@
-feature-flags:
-  include-path-pattern:
-    - "/**"
-  features:
-    development: false

@@ -1,0 +1,5 @@
+feature-flags:
+  feature-names:
+    demo-feature: false
+  response:
+    type: HTML

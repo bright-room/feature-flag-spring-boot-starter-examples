@@ -1,0 +1,4 @@
+feature-flags:
+  feature-names:
+    known-feature: true
+  # default-enabled はデフォルト false（fail-closed）

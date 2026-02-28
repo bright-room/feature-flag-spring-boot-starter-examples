@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.brightroom.example.FeatureManagementMapper">
+
+  <select id="findEnabledByFeatureName" parameterType="string" resultType="java.lang.Boolean">
+    SELECT enabled
+    FROM feature_management
+    WHERE feature_name = #{featureName}
+  </select>
+
+</mapper>
