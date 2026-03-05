@@ -22,4 +22,5 @@ include(
     "webmvc:custom-provider-database",
     "webmvc:custom-provider-simple",
     "webmvc:error-handling",
+    "webmvc:rollout",
 )
