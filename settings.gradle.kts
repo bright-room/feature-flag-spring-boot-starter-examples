@@ -23,4 +23,5 @@ include(
     "webmvc:custom-provider-simple",
     "webmvc:error-handling",
     "webmvc:rollout",
+    "webmvc:functional-endpoint",
 )

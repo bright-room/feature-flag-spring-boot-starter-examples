@@ -1,0 +1,8 @@
+feature-flags:
+  features:
+    stable-api:
+      enabled: true
+    beta-api:
+      enabled: true
+    experimental-api:
+      enabled: false
