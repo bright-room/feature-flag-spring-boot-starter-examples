@@ -78,9 +78,11 @@
 
 ```yaml
 feature-flags:
-  feature-names:
-    premium-feature: false
-    new-dashboard: false
+  features:
+    premium-feature:
+      enabled: false
+    new-dashboard:
+      enabled: false
 ```
 
 両方のフィーチャーフラグが `false` に設定されているため、保護されたすべてのエンドポイントは `FeatureFlagAccessDeniedException` をスローします。アクティブな `@ControllerAdvice`（Spring プロファイルによって決定）が例外の処理方法を決定します。

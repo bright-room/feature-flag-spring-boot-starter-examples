@@ -49,19 +49,21 @@ This module demonstrates the **fail-closed** (default) and **fail-open** behavio
 
 ```yaml
 feature-flags:
-  feature-names:
-    known-feature: true
+  features:
+    known-feature:
+      enabled: true
 ```
 
-`default-enabled` is `false` by default, so any feature flag not listed under `feature-names` will be treated as disabled.
+`default-enabled` is `false` by default, so any feature flag not listed under `features` will be treated as disabled.
 
 ### Fail-open profile (`application-fail-open.yml`)
 
 ```yaml
 feature-flags:
-  feature-names:
-    known-disabled: false
+  features:
+    known-disabled:
+      enabled: false
   default-enabled: true
 ```
 
-Setting `default-enabled: true` means any feature flag not listed under `feature-names` will be treated as enabled.
+Setting `default-enabled: true` means any feature flag not listed under `features` will be treated as enabled.

@@ -1,6 +1,6 @@
 package net.brightroom.example.provider.database;
 
-import net.brightroom.featureflag.webmvc.provider.FeatureFlagProvider;
+import net.brightroom.featureflag.core.provider.FeatureFlagProvider;
 import org.springframework.stereotype.Component;
 
 @Component

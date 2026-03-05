@@ -78,9 +78,11 @@ This module demonstrates how to customize the error handling behavior when a fea
 
 ```yaml
 feature-flags:
-  feature-names:
-    premium-feature: false
-    new-dashboard: false
+  features:
+    premium-feature:
+      enabled: false
+    new-dashboard:
+      enabled: false
 ```
 
 Both feature flags are set to `false`, so all guarded endpoints will throw `FeatureFlagAccessDeniedException`. The active `@ControllerAdvice` (determined by the Spring profile) decides how to handle the exception.

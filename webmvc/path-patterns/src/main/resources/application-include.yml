@@ -1,6 +1,0 @@
-feature-flags:
-  path-patterns:
-    includes:
-      - "/api/v2/**"
-  feature-names:
-    v2-api: false

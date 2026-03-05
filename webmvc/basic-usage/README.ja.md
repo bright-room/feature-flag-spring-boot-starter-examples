@@ -68,15 +68,23 @@
 
 ```yaml
 feature-flags:
-  feature-names:
-    greeting: true
-    new-search: true
-    new-export: false
-    legacy-api: false
-    special-endpoint: true
-    json-demo: false
-    plain-text-demo: false
-    html-demo: false
+  features:
+    greeting:
+      enabled: true
+    new-search:
+      enabled: true
+    new-export:
+      enabled: false
+    legacy-api:
+      enabled: false
+    special-endpoint:
+      enabled: true
+    json-demo:
+      enabled: false
+    plain-text-demo:
+      enabled: false
+    html-demo:
+      enabled: false
 ```
 
 ### プロファイル別 YAML

@@ -1,6 +1,6 @@
 [versions]
 java = "25"
-feature_flag = { strictly = "3.0.1" }
+feature_flag = { strictly = "4.0.0" }
 
 [libraries]
 #########################################
@@ -9,6 +9,7 @@ feature_flag = { strictly = "3.0.1" }
 spring-boot-starter-webmvc = { module = "org.springframework.boot:spring-boot-starter-webmvc" }
 spring-boot-starter-thymeleaf = { module = "org.springframework.boot:spring-boot-starter-thymeleaf" }
 spring-boot-configuration-processor = { module = "org.springframework.boot:spring-boot-configuration-processor" }
+spring-boot-starter-actuator = { module = "org.springframework.boot:spring-boot-starter-actuator" }
 spring-boot-devtools = { module = "org.springframework.boot:spring-boot-devtools" }
 spring-boot-docker-compose = { module = "org.springframework.boot:spring-boot-docker-compose" }
 #########################################
@@ -22,6 +23,7 @@ postgresql-jdbc = { module = "org.postgresql:postgresql" }
 #########################################
 feature-flag-spring-boot-starter-core = { module = "net.bright-room.feature-flag-spring-boot-starter:core", version.ref = "feature_flag" }
 feature-flag-spring-boot-starter-webmvc = { module = "net.bright-room.feature-flag-spring-boot-starter:webmvc", version.ref = "feature_flag" }
+feature-flag-spring-boot-starter-actuator = { module = "net.bright-room.feature-flag-spring-boot-starter:actuator", version.ref = "feature_flag" }
 
 #########################################
 # gradle plugins

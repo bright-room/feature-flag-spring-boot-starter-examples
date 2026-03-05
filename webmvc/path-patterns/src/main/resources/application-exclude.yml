@@ -1,7 +1,0 @@
-feature-flags:
-  path-patterns:
-    excludes:
-      - "/api/health"
-      - "/api/info"
-  feature-names:
-    api-feature: false

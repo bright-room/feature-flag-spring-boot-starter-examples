@@ -49,19 +49,21 @@
 
 ```yaml
 feature-flags:
-  feature-names:
-    known-feature: true
+  features:
+    known-feature:
+      enabled: true
 ```
 
-`default-enabled` はデフォルトで `false` のため、`feature-names` に記載されていないフィーチャーフラグは無効として扱われます。
+`default-enabled` はデフォルトで `false` のため、`features` に記載されていないフィーチャーフラグは無効として扱われます。
 
 ### Fail-open プロファイル（`application-fail-open.yml`）
 
 ```yaml
 feature-flags:
-  feature-names:
-    known-disabled: false
+  features:
+    known-disabled:
+      enabled: false
   default-enabled: true
 ```
 
-`default-enabled: true` を設定すると、`feature-names` に記載されていないフィーチャーフラグは有効として扱われます。
+`default-enabled: true` を設定すると、`features` に記載されていないフィーチャーフラグは有効として扱われます。

@@ -39,7 +39,7 @@ spring:
     compose:
       file: ../../docker/compose.yaml
   datasource:
-    url: jdbc:postgresql://localhost:65432/postgres
+    url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
     password: postgres
 ```

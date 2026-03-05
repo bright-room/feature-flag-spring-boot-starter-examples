@@ -1,4 +1,5 @@
 feature-flags:
-  feature-names:
-    known-disabled: false
+  features:
+    known-disabled:
+      enabled: false
   default-enabled: true
