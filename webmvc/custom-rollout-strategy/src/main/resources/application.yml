@@ -1,0 +1,6 @@
+feature-flags:
+  default-enabled: true
+  features:
+    gradual-feature:
+      enabled: true
+      rollout: 60
