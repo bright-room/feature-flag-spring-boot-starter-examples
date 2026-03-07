@@ -26,9 +26,14 @@ include(
     "webmvc:functional-endpoint",
     "webmvc:actuator-endpoint",
     "webmvc:health-indicator",
+    "webflux:fail-behavior",
+    "webflux:error-handling",
+    "webflux:custom-provider",
+    "webflux:actuator-endpoint",
+    "webflux:health-indicator",
     "webflux:basic-usage",
     "webflux:functional-endpoint",
     "webflux:rollout",
     "webmvc:custom-rollout-strategy",
-    "webmvc:event-listener",
+    "webmvc:event-listener"
 )

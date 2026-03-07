@@ -26,6 +26,7 @@ feature-flag-spring-boot-starter-core = { module = "net.bright-room.feature-flag
 feature-flag-spring-boot-starter-webmvc = { module = "net.bright-room.feature-flag-spring-boot-starter:webmvc", version.ref = "feature_flag" }
 feature-flag-spring-boot-starter-webflux = { module = "net.bright-room.feature-flag-spring-boot-starter:webflux", version.ref = "feature_flag" }
 feature-flag-spring-boot-starter-actuator = { module = "net.bright-room.feature-flag-spring-boot-starter:actuator", version.ref = "feature_flag" }
+feature-flag-spring-boot-starter-webflux = { module = "net.bright-room.feature-flag-spring-boot-starter:webflux", version.ref = "feature_flag" }
 
 #########################################
 # gradle plugins

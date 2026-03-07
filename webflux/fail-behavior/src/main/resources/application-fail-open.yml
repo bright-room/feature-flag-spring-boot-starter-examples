@@ -1,0 +1,5 @@
+feature-flags:
+  features:
+    known-disabled:
+      enabled: false
+  default-enabled: true
