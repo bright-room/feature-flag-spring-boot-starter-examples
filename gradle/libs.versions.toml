@@ -7,6 +7,7 @@ feature_flag = { strictly = "4.0.0" }
 # spring boot
 #########################################
 spring-boot-starter-webmvc = { module = "org.springframework.boot:spring-boot-starter-webmvc" }
+spring-boot-starter-webflux = { module = "org.springframework.boot:spring-boot-starter-webflux" }
 spring-boot-starter-thymeleaf = { module = "org.springframework.boot:spring-boot-starter-thymeleaf" }
 spring-boot-configuration-processor = { module = "org.springframework.boot:spring-boot-configuration-processor" }
 spring-boot-starter-actuator = { module = "org.springframework.boot:spring-boot-starter-actuator" }
@@ -23,6 +24,7 @@ postgresql-jdbc = { module = "org.postgresql:postgresql" }
 #########################################
 feature-flag-spring-boot-starter-core = { module = "net.bright-room.feature-flag-spring-boot-starter:core", version.ref = "feature_flag" }
 feature-flag-spring-boot-starter-webmvc = { module = "net.bright-room.feature-flag-spring-boot-starter:webmvc", version.ref = "feature_flag" }
+feature-flag-spring-boot-starter-webflux = { module = "net.bright-room.feature-flag-spring-boot-starter:webflux", version.ref = "feature_flag" }
 feature-flag-spring-boot-starter-actuator = { module = "net.bright-room.feature-flag-spring-boot-starter:actuator", version.ref = "feature_flag" }
 
 #########################################
