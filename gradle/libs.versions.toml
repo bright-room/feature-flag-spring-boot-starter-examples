@@ -31,4 +31,4 @@ feature-flag-spring-boot-starter-actuator = { module = "net.bright-room.feature-
 spring-boot = { module = "org.springframework.boot:org.springframework.boot.gradle.plugin", version = { strictly = "4.0.3" } }
 spring-dependency-management = { module = "io.spring.dependency-management:io.spring.dependency-management.gradle.plugin", version = { strictly = "1.1.7" }  }
 
-spotless = { module = "com.diffplug.spotless:com.diffplug.spotless.gradle.plugin", version = { strictly = "8.2.1" } }
+spotless = { module = "com.diffplug.spotless:com.diffplug.spotless.gradle.plugin", version = { strictly = "8.3.0" } }
