@@ -26,7 +26,9 @@ include(
     "webmvc:functional-endpoint",
     "webmvc:actuator-endpoint",
     "webmvc:health-indicator",
+    "webflux:basic-usage",
     "webflux:functional-endpoint",
+    "webflux:rollout",
     "webmvc:custom-rollout-strategy",
     "webmvc:event-listener",
 )
