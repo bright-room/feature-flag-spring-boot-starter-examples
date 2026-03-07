@@ -1,0 +1,21 @@
+package net.brightroom.example.actuator;
+
+import net.brightroom.featureflag.core.annotation.FeatureFlag;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class DemoController {
+
+  @GetMapping("/api/demo")
+  @FeatureFlag("demo-feature")
+  public String demo() {
+    return "demo-feature is enabled!";
+  }
+
+  @GetMapping("/api/another")
+  @FeatureFlag("another-feature")
+  public String another() {
+    return "another-feature is enabled!";
+  }
+}

@@ -1,0 +1,13 @@
+feature-flags:
+  features:
+    demo-feature:
+      enabled: true
+      rollout: 80
+    another-feature:
+      enabled: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: feature-flags,health

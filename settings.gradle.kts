@@ -24,4 +24,6 @@ include(
     "webmvc:error-handling",
     "webmvc:rollout",
     "webmvc:functional-endpoint",
+    "webmvc:actuator-endpoint",
+    "webmvc:health-indicator",
 )
