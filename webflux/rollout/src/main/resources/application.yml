@@ -1,0 +1,6 @@
+feature-flags:
+  default-enabled: true
+  features:
+    config-rollout:
+      enabled: true
+      rollout: 30
